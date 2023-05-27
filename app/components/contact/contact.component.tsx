@@ -75,7 +75,7 @@ const Contact = () => {
     <section className="mt-10 mb-10 text-center flex flex-col items-center justify-center">
       <Heading
         title="Contact me"
-        subtitle="Write an email, and lets get in touch!"
+        subtitle="Write an email, and let's get in touch!"
         center
       />
       <div className="flex flex-col md:gap-6 md:flex-row">
