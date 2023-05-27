@@ -57,6 +57,7 @@ const Input: React.FC<InputProps> = ({
       )}
 
       <label
+        htmlFor={id}
         className={`peer absolute text-md duration-150 transform left-4 -translate-y-3 top-5 z-10 origin-[0] 
         peer-placeholder-shown:scale-100 
         peer-placeholder-shown:translate-y-0 
