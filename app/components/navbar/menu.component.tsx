@@ -9,6 +9,15 @@ const Menu = () => {
     setIsOpen(value => !value);
   }, []);
 
+  if (isOpen) {
+    window.addEventListener('resize', () => {
+      const width = window.innerWidth;
+      if (width > 770) {
+        setIsOpen(false);
+      }
+    });
+  }
+
   const scrollToSection = (id: string) => {
     const section = document.getElementById(id)!;
     section!.scrollIntoView({
@@ -17,19 +26,12 @@ const Menu = () => {
     });
   };
 
-  window.addEventListener('resize', () => {
-    if (window.innerWidth > 767) {
-      setIsOpen(false);
-    }
-  });
-
   return (
     <div className="relative w-[100px] bg-blue-100 dark:bg-neutral-700 flex justify-end z-60">
       <div
         className="p-4 md:hidden flex flex-row items-center gap-3 cursor-pointer transition z-10"
         onClick={() => {
           toggleOpen();
-          // autoClose();
         }}
       >
         <div
@@ -54,8 +56,8 @@ const Menu = () => {
       </div>
 
       <div
-        className={`absolute -z-10 flex flex-col gap-2 rounded-bl-md p-4 pt-0 bg-blue-100 dark:bg-neutral-700 text-md transition-all ease duration-500 right-0 ${
-          isOpen ? 'top-16' : '-top-56'
+        className={`absolute -z-10 flex flex-col gap-2 rounded-bl-md p-4 pt-0 bg-blue-100 dark:bg-neutral-700 text-md transition-all ease duration-500 top-16 ${
+          isOpen ? 'right-0' : '-right-56'
         }`}
       >
         <div
