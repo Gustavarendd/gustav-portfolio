@@ -57,7 +57,7 @@ const Menu = () => {
 
       <div
         className={`absolute -z-10 flex flex-col gap-2 rounded-bl-md p-4 pt-4 bg-blue-100 dark:bg-neutral-700 text-md transition-all ease duration-500 top-14 ${
-          isOpen ? 'right-0' : '-right-56'
+          isOpen ? 'right-0' : '-right-56 hidden'
         }`}
       >
         <div

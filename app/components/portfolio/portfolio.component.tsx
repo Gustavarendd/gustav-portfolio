@@ -22,12 +22,12 @@ const Portfolio = () => {
           repoUrl="https://github.com/Gustavarendd/house-hosting"
         />
         <PortfolioCard
-          title="Crown Clothing"
+          title="The Clothing Store"
           subtitle="A clothing web-shop"
-          usedTech="#React #TS #JS #Firebase"
-          imageSrc="/images/portfolio-images/crown-app-small.png"
+          usedTech="#React #TS #JS #Firebase #Stripe"
+          imageSrc="/images/portfolio-images/theClothingStore.jpeg"
           liveUrl="https://jade-licorice-23a528.netlify.app/"
-          repoUrl="https://github.com/Gustavarendd/crown-app"
+          repoUrl="https://github.com/Gustavarendd/web-shop"
         />
         <PortfolioCard
           title="Share My Place"
