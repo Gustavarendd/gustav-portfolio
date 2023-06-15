@@ -22,6 +22,14 @@ const Portfolio = () => {
           repoUrl="https://github.com/Gustavarendd/house-hosting"
         />
         <PortfolioCard
+          title="Car app"
+          subtitle="A website that lets you browse cars and see information on them."
+          usedTech="#React #TS #JS #nextJS #Tailwind"
+          imageSrc="/images/portfolio-images/carApp.jpeg"
+          liveUrl="https://car-app-pi.vercel.app/"
+          repoUrl="https://github.com/Gustavarendd/car-app"
+        />
+        <PortfolioCard
           title="The Clothing Store"
           subtitle="A clothing web-shop"
           usedTech="#React #TS #JS #Firebase #Stripe"
@@ -36,14 +44,6 @@ const Portfolio = () => {
           imageSrc="/images/portfolio-images/share-my-place-small.png"
           liveUrl="https://gustavarendd.github.io/find-my-place/"
           repoUrl="https://github.com/Gustavarendd/find-my-place"
-        />
-        <PortfolioCard
-          title="To Do List"
-          subtitle="A simple To Do list, where you can drag list items from active to finished."
-          usedTech="#HTML #CSS #JS"
-          imageSrc="/images/portfolio-images/to-do-list-small.png"
-          liveUrl="https://gustavarendd.github.io/to-do-list/"
-          repoUrl="https://github.com/Gustavarendd/to-do-list"
         />
       </div>
     </section>
